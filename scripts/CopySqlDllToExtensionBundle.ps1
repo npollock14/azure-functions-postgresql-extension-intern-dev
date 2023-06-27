@@ -15,6 +15,6 @@ cd ./samples/samples-js
 $extensionBundlePath = func GetExtensionBundlePath
 $extensionBundleBinPath = Join-Path -Path $extensionBundlePath -ChildPath "bin"
 cd ../..
-$sqlDllPath = "./src/Microsoft.Azure.WebJobs.Extensions.PostgreSql/bin/Debug/netstandard2.1/Microsoft.Azure.WebJobs.Extensions.PostgreSql.dll"
+$sqlDllPath = "./src/bin/Debug/netstandard2.1/Microsoft.Azure.WebJobs.Extensions.PostgreSql.dll"
 Copy-Item -Path $sqlDllPath -Destination $extensionBundleBinPath
 Write-Host "Copied $sqlDllPath to $extensionBundleBinPath"

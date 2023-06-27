@@ -6,6 +6,8 @@
 module.exports = async function (context, req) {
   // Note that this expects the body to be a JSON object or array of objects which have a property
   // matching each of the columns in the table to upsert to.
+  context.log("JavaScript HTTP trigger function processed a request.");
+  context.log("Request body: " + JSON.stringify(req.body));
   context.bindings.product = req.body;
 
   return {
