@@ -19,7 +19,7 @@
       "name": "products",
       "type": "postgresql",
       "direction": "in",
-      "commandText": "select * from Products where Cost = @Cost::int",
+      "commandText": "select * from Products where \"Cost\" = @Cost::int",
       "commandType": "Text",
       "parameters": "@Cost={cost}",
       "connectionStringSetting": "PostgreSqlConnectionString"
